@@ -2,9 +2,87 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
 
-</header>
-<body>
+<div class="main">
+    <header>
+        <h1 id="title">Web Development Survey</h1>
+        <p id="description">Tell us about your web development experience</p>
+    </header>
 
-</body>
+    <body id="body">
+        <form id="survey-form">
+            <label for="name" id="name-label">Name: </label><br>
+            <input type="name" id="name" name="name" class="inputs" placeholder="Enter your name" required><br>
+
+            <label for="email" id="email-label">E-mail: </label><br>
+            <input type="email" id="email" name="email" class="inputs" placeholder="Enter your Email" required><br>
+
+            <label for="number" id="number-label">Age: </label><br>
+            <input type="number" id="number" name="number" class="inputs" placeholder="Age" min="0" max="120"><br>
+            <br>
+
+            <p>Which option best describes your current role?</p>
+            <select name = "dropdown" id="dropdown">
+                <option disabled hidden selected>Select current role</option>
+                <option value = "Student">Student</option>
+                <option value = "Professional Coder">Professional Coder</option>
+                <option value = "Amateur Coder">Amateur Coder</option>
+                <option value = "Other">Other</option>
+            </select>
+
+        <p>Would you recommend web development to a friend?</p>
+
+        <input type="radio" id="definetly" name="recommend" value="definetly">
+        <label for="definetly">Definetly</label><br>
+        <input type="radio" id="maybe" name="recommend" value="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" id="not-sure" name="recommend" value="not-sure">
+        <label for="not-sure">Not sure</label>
+
+        <p>What type of resources do you use to learn web development?</p>
+        <input type="checkbox" id="videos" name="resources" value="videos">
+        <label for="videos">Videos</label><br>
+
+        <input type="checkbox" id="blogs" name="resources" value="blogs">
+        <label for="blogs">Blogs</label><br>
+
+        <input type="checkbox" id="forums" name="resources" value="forums">
+        <label for="forums">Forums</label><br>
+
+        <input type="checkbox" id="courses" name="resources" value="courses">
+        <label for="courses">Online Courses</label><br>
+
+        <input type="checkbox" id="books" name="resources" value="books">
+        <label for="books">Books</label><br>
+
+        <input type="checkbox" id="encyclopedia" name="resources" value="encyoclopedia">
+        <label for="encyclopedia">Online Encyclopedias</label><br>
+
+        <input type="checkbox" id="magazines" name="resources" value="magazines">
+        <label for="magazines">Magazines</label><br>
+
+        <input type="checkbox" id="other" name="resources" value="other">
+        <label for="other">Other</label><br>
+        <br>
+
+        <label for="comments">Any comments or suggestions?</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="33" placeholder="Enter your comment here..."></textarea>
+        <br>
+
+        <button id="submit" value="submit">Submit</button>
+
+
+
+
+        </form>
+    </body>
+
+    <footer>
+        <p></p>
+    </footer>
+
+
+
+
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</div>
